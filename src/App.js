@@ -49,6 +49,9 @@ export default class FetchData extends Component{
                 <div>Loading....</div>
             ) :(
                 <div>
+
+                    <div style={{padding: "50px", paddingBottom: "20px"}}>
+
                     <h1>Sri Lanka</h1>
 
                     <div className="card-deck">
@@ -112,8 +115,10 @@ export default class FetchData extends Component{
                                 </div>
                         </div>
                     </div>
-                    <br/>
-                    <br/>
+
+                    </div>
+
+                    <div style={{padding: "50px", paddingTop: "20px"}}>
                     <h1>Global</h1>
 
                     <div className="card-deck">
@@ -167,6 +172,7 @@ export default class FetchData extends Component{
                                 <small className="text-muted">Last updated {this.state.update_date_time} </small>
                             </div>
                         </div>
+                    </div>
                     </div>
 
                 </div>
