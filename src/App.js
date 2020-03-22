@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Logo from "./logo.png";
 import './App.css';
 
 export default class FetchData extends Component{
@@ -45,6 +46,8 @@ export default class FetchData extends Component{
     render() {
         return (
             <div>
+
+
             {this.state.loading || !this.state.update_date_time ? (
                 <div>Loading....</div>
             ) :(
@@ -173,6 +176,11 @@ export default class FetchData extends Component{
                             </div>
                         </div>
                     </div>
+                    </div>
+
+                    <div>
+                        <h5 style={{textAlign: "right", paddingRight: "67px"}}>Source: Health Promotion Bureau</h5>
+                        <img style={{"width" : "25%", "float" : "right", "padding-bottom": "25px"}} src={Logo}/>
                     </div>
 
                 </div>
