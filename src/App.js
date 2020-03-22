@@ -47,7 +47,7 @@ export default class FetchData extends Component{
         return (
             <div>
 
-
+            <h3 style={{"text-align": "center", "padding-top": "20px"}}>Covid-19 Sri Lanka and Global Tracker</h3>
             {this.state.loading || !this.state.update_date_time ? (
                 <div>Loading....</div>
             ) :(
@@ -110,7 +110,7 @@ export default class FetchData extends Component{
                         </div>
                         <div className="card">
                                 <div className="card-body">
-                                    <h5 className="card-title">Suspected or Confirmed Cases Currently Hospitalized</h5>
+                                    <h5 className="card-title">Suspicious Patients in Hospitals</h5>
                                     <p className="card-text">{this.state.local_total_number_of_individuals_in_hospitals}</p>
                                 </div>
                                 <div className="card-footer">
