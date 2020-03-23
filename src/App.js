@@ -45,151 +45,317 @@ export default class FetchData extends Component{
 
     render() {
         return (
+
             <div>
+                {this.state.loading || !this.state.update_date_time ? (
+                    <div>Loading....</div>
+                ) :(
 
-            <h3 style={{"text-align": "center", "padding-top": "20px"}}>Covid-19 Sri Lanka and Global Tracker</h3>
-            {this.state.loading || !this.state.update_date_time ? (
-                <div>Loading....</div>
-            ) :(
-                <div>
+            <div className="container-fluid">
+                <div className="row">
+                    <div className="col-md-12">
+                        <nav className="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark fixed-top">
 
-                    <div style={{padding: "50px", paddingBottom: "20px"}}>
+                            <button className="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#bs-example-navbar-collapse-1">
+                                <span className="navbar-toggler-icon"></span>
+                            </button>
+                            <a className="navbar-brand" href="https://milindaranawaka.github.io/Covid-19-Sri-Lanka-and-Global-Tracker/">Covid-19 Sri Lanka and Global Tracker</a>
 
-                    <h1>Sri Lanka</h1>
-
-                    <div className="card-deck">
-                        <div className="card">
+                            {/*<div classname="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                          <ul classname="navbar-nav">
+                              <li classname="nav-item active">
+                                  <a classname="nav-link" href="#">link <span classname="sr-only">(current)</span></a>
+                              </li>
+                              <li classname="nav-item">
+                                  <a classname="nav-link" href="#">link</a>
+                              </li>
+                              <li classname="nav-item dropdown">
+                                  <a classname="nav-link dropdown-toggle" href="http://example.com"
+                                     id="navbardropdownmenulink" data-toggle="dropdown">dropdown link</a>
+                                  <div classname="dropdown-menu" aria-labelledby="navbardropdownmenulink">
+                                      <a classname="dropdown-item" href="#">action</a> <a classname="dropdown-item"
+                                                                                          href="#">another action</a> <a
+                                      classname="dropdown-item" href="#">something else here</a>
+                                      <div classname="dropdown-divider">
+                                      </div>
+                                      <a classname="dropdown-item" href="#">separated link</a>
+                                  </div>
+                              </li>
+                          </ul>
+                          <form classname="form-inline">
+                              <input classname="form-control mr-sm-2" type="text"/>
+                              <button classname="btn btn-primary my-2 my-sm-0" type="submit">
+                                  search
+                              </button>
+                          </form>
+                          <ul classname="navbar-nav ml-md-auto">
+                              <li classname="nav-item active">
+                                  <a classname="nav-link" href="#">link <span classname="sr-only">(current)</span></a>
+                              </li>
+                              <li classname="nav-item dropdown">
+                                  <a classname="nav-link dropdown-toggle" href="http://example.com"
+                                     id="navbardropdownmenulink" data-toggle="dropdown">dropdown link</a>
+                                  <div classname="dropdown-menu dropdown-menu-right"
+                                       aria-labelledby="navbardropdownmenulink">
+                                      <a classname="dropdown-item" href="#">action</a> <a classname="dropdown-item"
+                                                                                          href="#">another action</a> <a
+                                      classname="dropdown-item" href="#">something else here</a>
+                                      <div classname="dropdown-divider">
+                                      </div>
+                                      <a classname="dropdown-item" href="#">separated link</a>
+                                  </div>
+                              </li>
+                          </ul>
+                      </div>*/}
+                        </nav>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <div className="row">
+                    <div className="col-md-12">
+                        <h3>
+                            Sri Lanka
+                        </h3>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-md-4">
+                        <div className="card text-white bg-primary">
+                            <h5 className="card-header">
+                                New Cases
+                            </h5>
                             <div className="card-body">
-                                <h5 className="card-title">New Cases</h5>
-                                <p className="card-text">{this.state.local_new_cases}</p>
+                                <p className="card-text">
+                                    {this.state.local_new_cases}
+                                </p>
                             </div>
                             <div className="card-footer">
-                                <small className="text-muted">Last updated {this.state.update_date_time} </small>
+                                Last updated {this.state.update_date_time}
                             </div>
                         </div>
-                        <div className="card">
-                            <div className="card-body">
-                                <h5 className="card-title">Total Cases</h5>
-                                <p className="card-text">{this.state.local_total_cases}</p>
-                            </div>
-                            <div className="card-footer">
-                                <small className="text-muted">Last updated {this.state.update_date_time} </small>
-                            </div>
-                        </div>
-                        <div className="card">
-                            <div className="card-body">
-                                <h5 className="card-title">Deaths</h5>
-                                <p className="card-text">{this.state.local_deaths}</p>
-                            </div>
-                            <div className="card-footer">
-                                <small className="text-muted">Last updated {this.state.update_date_time} </small>
-                            </div>
-                        </div>
+                        <br/>
                     </div>
 
-                    <br/>
-
-                    <div className="card-deck">
-                        <div className="card">
-                                <div className="card-body">
-                                    <h5 className="card-title">Recovered</h5>
-                                    <p className="card-text">{this.state.local_recovered}</p>
-                                </div>
-                                <div className="card-footer">
-                                    <small className="text-muted">Last updated {this.state.update_date_time} </small>
-                                </div>
-                        </div>
-                        <div className="card">
-                                <div className="card-body">
-                                    <h5 className="card-title">New Deaths</h5>
-                                    <p className="card-text">{this.state.local_new_deaths}</p>
-                                </div>
-                                <div className="card-footer">
-                                    <small className="text-muted">Last updated {this.state.update_date_time} </small>
-                                </div>
-                        </div>
-                        <div className="card">
-                                <div className="card-body">
-                                    <h5 className="card-title">Suspicious Patients in Hospitals</h5>
-                                    <p className="card-text">{this.state.local_total_number_of_individuals_in_hospitals}</p>
-                                </div>
-                                <div className="card-footer">
-                                    <small className="text-muted">Last updated {this.state.update_date_time} </small>
-                                </div>
-                        </div>
-                    </div>
-
-                    </div>
-
-                    <div style={{padding: "50px", paddingTop: "20px"}}>
-                    <h1>Global</h1>
-
-                    <div className="card-deck">
-                        <div className="card">
+                    <div className="col-md-4">
+                        <div className="card text-white bg-danger">
+                            <h5 className="card-header">
+                                Total Cases
+                            </h5>
                             <div className="card-body">
-                                <h5 className="card-title">New Cases</h5>
-                                <p className="card-text">{this.state.global_new_cases}</p>
+                                <p className="card-text">
+                                    {this.state.local_total_cases}
+                                </p>
                             </div>
                             <div className="card-footer">
-                                <small className="text-muted">Last updated {this.state.update_date_time} </small>
+                                Last updated {this.state.update_date_time}
                             </div>
                         </div>
-                        <div className="card">
+                        <br/>
+                    </div>
+                    <div className="col-md-4">
+                        <div className="card text-white bg-warning">
+                            <h5 className="card-header">
+                                Deaths
+                            </h5>
                             <div className="card-body">
-                                <h5 className="card-title">Total Cases</h5>
-                                <p className="card-text">{this.state.global_total_cases}</p>
+                                <p className="card-text">
+                                    {this.state.local_deaths}
+                                </p>
                             </div>
                             <div className="card-footer">
-                                <small className="text-muted">Last updated {this.state.update_date_time} </small>
+                                Last updated {this.state.update_date_time}
                             </div>
                         </div>
-                        <div className="card">
-                            <div className="card-body">
-                                <h5 className="card-title">Deaths</h5>
-                                <p className="card-text">{this.state.global_deaths}</p>
-                            </div>
-                            <div className="card-footer">
-                                <small className="text-muted">Last updated {this.state.update_date_time} </small>
-                            </div>
-                        </div>
+                        <br/>
                     </div>
-
-                    <br/>
-
-                    <div className="card-deck">
-                        <div className="card">
-                            <div className="card-body">
-                                <h5 className="card-title">Recovered</h5>
-                                <p className="card-text">{this.state.global_recovered}</p>
-                            </div>
-                            <div className="card-footer">
-                                <small className="text-muted">Last updated {this.state.update_date_time} </small>
-                            </div>
-                        </div>
-                        <div className="card">
-                            <div className="card-body">
-                                <h5 className="card-title">New Deaths</h5>
-                                <p className="card-text">{this.state.global_new_deaths}</p>
-                            </div>
-                            <div className="card-footer">
-                                <small className="text-muted">Last updated {this.state.update_date_time} </small>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-
-                    <div>
-                        <h5 style={{textAlign: "right", paddingRight: "67px"}}>Source: Health Promotion Bureau</h5>
-                        <img style={{"width" : "25%", "float" : "right", "padding-bottom": "25px"}} src={Logo}/>
-                    </div>
-
                 </div>
 
+                <br/>
+                <br/>
+                <div className="row">
+                    <div className="col-md-4">
+                        <div className="card text-white bg-success">
+                            <h5 className="card-header">
+                                Recovered
+                            </h5>
+                            <div className="card-body">
+                                <p className="card-text">
+                                    {this.state.local_recovered}
+                                </p>
+                            </div>
+                            <div className="card-footer">
+                                Last updated {this.state.update_date_time}
+                            </div>
+                        </div>
+                        <br/>
+                    </div>
+                    <div className="col-md-4">
+                        <div className="card text-white bg-warning">
+                            <h5 className="card-header">
+                                New Deaths
+                            </h5>
+                            <div className="card-body">
+                                <p className="card-text">
+                                    {this.state.local_new_deaths}
+                                </p>
+                            </div>
+                            <div className="card-footer">
+                                Last updated {this.state.update_date_time}
+                            </div>
+                        </div>
+                        <br/>
+                    </div>
+                    <div className="col-md-4">
+                        <div className="card text-white bg-info">
+                            <h5 className="card-header">
+                                Suspicious Patients in Hospitals
+                            </h5>
+                            <div className="card-body">
+                                <p className="card-text">
+                                    {this.state.local_total_number_of_individuals_in_hospitals}
+                                </p>
+                            </div>
+                            <div className="card-footer">
+                                Last updated {this.state.update_date_time}
+                            </div>
+                        </div>
+                        <br/>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-md-12">
+                    </div>
+                </div>
 
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <div className="row">
+                    <div className="col-md-12">
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-md-12">
+                        <h3>
+                            Global
+                        </h3>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-md-4">
+                        <div className="card text-white bg-primary">
+                            <h5 className="card-header">
+                                New Cases
+                            </h5>
+                            <div className="card-body">
+                                <p className="card-text">
+                                    {this.state.global_new_cases}
+                                </p>
+                            </div>
+                            <div className="card-footer">
+                                Last updated {this.state.update_date_time}
+                            </div>
+                        </div>
+                        <br/>
+                    </div>
+                    <div className="col-md-4">
+                        <div className="card text-white bg-danger">
+                            <h5 className="card-header">
+                                Total Cases
+                            </h5>
+                            <div className="card-body">
+                                <p className="card-text">
+                                    {this.state.global_total_cases}
+                                </p>
+                            </div>
+                            <div className="card-footer">
+                                Last updated {this.state.update_date_time}
+                            </div>
+                        </div>
+                        <br/>
+                    </div>
+                    <div className="col-md-4">
+                        <div className="card text-white bg-success">
+                            <h5 className="card-header">
+                                Deaths
+                            </h5>
+                            <div className="card-body">
+                                <p className="card-text">
+                                    {this.state.global_deaths}
+                                </p>
+                            </div>
+                            <div className="card-footer">
+                                Last updated {this.state.update_date_time}
+                            </div>
+                        </div>
+                        <br/>
+                    </div>
+                </div>
 
+                <br/>
+                <br/>
+                <div className="row">
+                    <div className="col-md-6">
+                        <div className="card text-white bg-warning">
+                            <h5 className="card-header">
+                                Recovered
+                            </h5>
+                            <div className="card-body">
+                                <p className="card-text">
+                                    {this.state.global_recovered}
+                                </p>
+                            </div>
+                            <div className="card-footer">
+                                Last updated {this.state.update_date_time}
+                            </div>
+                        </div>
+                        <br/>
+                    </div>
+                    <div className="col-md-6">
+                        <div className="card text-white bg-info">
+                            <h5 className="card-header">
+                                New Deaths
+                            </h5>
+                            <div className="card-body">
+                                <p className="card-text">
+                                    {this.state.global_new_deaths}
+                                </p>
+                            </div>
+                            <div className="card-footer">
+                                Last updated {this.state.update_date_time}
+                            </div>
+                        </div>
+                        <br/>
+                    </div>
+                </div>
 
-            )}
-        </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <div className="row">
+                    <div className="col-md-12">
+                        <nav className="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark fixed-bottom">
+
+                            <button className="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#bs-example-navbar-collapse-1">
+                                <span className="navbar-toggler-icon"></span>
+                            </button>
+                            <p className="navbar-brand" style={{"text-align": "center;"}}> Made with ❤️ by <a className="navbar-brand" href="https://www.linkedin.com/in/milinda-ranawaka-5303a5185/">Milinda Ranawaka </a> | Powered By HEALTH PROMOTION BUREAU: <a className="navbar-brand" href="https://hpb.health.gov.lk/en/api-documentation">https://hpb.health.gov.lk/en/api-documentation</a> </p>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+        )}
+</div>
         );
     }
 
