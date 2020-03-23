@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/Covid-19-Sri-Lanka-and-Global-Tracker/static/css/main.5f361e03.chunk.css",
-    "main.js": "/Covid-19-Sri-Lanka-and-Global-Tracker/static/js/main.4b3f1f0a.chunk.js",
-    "main.js.map": "/Covid-19-Sri-Lanka-and-Global-Tracker/static/js/main.4b3f1f0a.chunk.js.map",
+    "main.js": "/Covid-19-Sri-Lanka-and-Global-Tracker/static/js/main.737091ef.chunk.js",
+    "main.js.map": "/Covid-19-Sri-Lanka-and-Global-Tracker/static/js/main.737091ef.chunk.js.map",
     "runtime-main.js": "/Covid-19-Sri-Lanka-and-Global-Tracker/static/js/runtime-main.662c87a8.js",
     "runtime-main.js.map": "/Covid-19-Sri-Lanka-and-Global-Tracker/static/js/runtime-main.662c87a8.js.map",
-    "static/js/2.21d44abc.chunk.js": "/Covid-19-Sri-Lanka-and-Global-Tracker/static/js/2.21d44abc.chunk.js",
-    "static/js/2.21d44abc.chunk.js.map": "/Covid-19-Sri-Lanka-and-Global-Tracker/static/js/2.21d44abc.chunk.js.map",
+    "static/js/2.99017f9b.chunk.js": "/Covid-19-Sri-Lanka-and-Global-Tracker/static/js/2.99017f9b.chunk.js",
+    "static/js/2.99017f9b.chunk.js.map": "/Covid-19-Sri-Lanka-and-Global-Tracker/static/js/2.99017f9b.chunk.js.map",
     "index.html": "/Covid-19-Sri-Lanka-and-Global-Tracker/index.html",
-    "precache-manifest.f886b9f6fdd1f00981fd9d4c23f1b8e6.js": "/Covid-19-Sri-Lanka-and-Global-Tracker/precache-manifest.f886b9f6fdd1f00981fd9d4c23f1b8e6.js",
+    "precache-manifest.b5ebaa2e9c41c04850efe44116144c52.js": "/Covid-19-Sri-Lanka-and-Global-Tracker/precache-manifest.b5ebaa2e9c41c04850efe44116144c52.js",
     "service-worker.js": "/Covid-19-Sri-Lanka-and-Global-Tracker/service-worker.js",
     "static/css/main.5f361e03.chunk.css.map": "/Covid-19-Sri-Lanka-and-Global-Tracker/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.21d44abc.chunk.js.LICENSE.txt": "/Covid-19-Sri-Lanka-and-Global-Tracker/static/js/2.21d44abc.chunk.js.LICENSE.txt",
+    "static/js/2.99017f9b.chunk.js.LICENSE.txt": "/Covid-19-Sri-Lanka-and-Global-Tracker/static/js/2.99017f9b.chunk.js.LICENSE.txt",
     "static/media/logo.png": "/Covid-19-Sri-Lanka-and-Global-Tracker/static/media/logo.0c220a6b.png"
   },
   "entrypoints": [
     "static/js/runtime-main.662c87a8.js",
-    "static/js/2.21d44abc.chunk.js",
+    "static/js/2.99017f9b.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.4b3f1f0a.chunk.js"
+    "static/js/main.737091ef.chunk.js"
   ]
 }
