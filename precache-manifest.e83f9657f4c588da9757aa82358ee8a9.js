@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "00ec775d6128463a4d14763cc62156d3",
+    "revision": "25d20c05db57982a18f251c44faf5eda",
     "url": "/Covid-19-Sri-Lanka-and-Global-Tracker/index.html"
   },
   {
-    "revision": "93c8fccdc525de656f0b",
+    "revision": "85d00ef290c293543fd9",
     "url": "/Covid-19-Sri-Lanka-and-Global-Tracker/static/css/main.5f361e03.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Covid-19-Sri-Lanka-and-Global-Tracker/static/js/2.99017f9b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "93c8fccdc525de656f0b",
-    "url": "/Covid-19-Sri-Lanka-and-Global-Tracker/static/js/main.737091ef.chunk.js"
+    "revision": "85d00ef290c293543fd9",
+    "url": "/Covid-19-Sri-Lanka-and-Global-Tracker/static/js/main.420522ba.chunk.js"
   },
   {
     "revision": "607a75649912ec98e703",
