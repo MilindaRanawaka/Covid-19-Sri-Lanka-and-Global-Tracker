@@ -141,7 +141,7 @@ export default class FetchData extends Component{
                     </div>
 
                     <div className="col-md-4">
-                        <div className="card text-white bg-danger">
+                        <div className="card text-white bg-warning">
                             <h5 className="card-header">
                                 Total Cases
                             </h5>
@@ -157,7 +157,7 @@ export default class FetchData extends Component{
                         <br/>
                     </div>
                     <div className="col-md-4">
-                        <div className="card text-white bg-warning">
+                        <div className="card text-white bg-danger">
                             <h5 className="card-header">
                                 Deaths
                             </h5>
@@ -194,7 +194,7 @@ export default class FetchData extends Component{
                         <br/>
                     </div>
                     <div className="col-md-4">
-                        <div className="card text-white bg-warning">
+                        <div className="card text-white bg-danger">
                             <h5 className="card-header">
                                 New Deaths
                             </h5>
@@ -264,7 +264,7 @@ export default class FetchData extends Component{
                         <br/>
                     </div>
                     <div className="col-md-4">
-                        <div className="card text-white bg-danger">
+                        <div className="card text-white bg-warning">
                             <h5 className="card-header">
                                 Total Cases
                             </h5>
@@ -280,7 +280,7 @@ export default class FetchData extends Component{
                         <br/>
                     </div>
                     <div className="col-md-4">
-                        <div className="card text-white bg-success">
+                        <div className="card text-white bg-danger">
                             <h5 className="card-header">
                                 Deaths
                             </h5>
@@ -301,7 +301,7 @@ export default class FetchData extends Component{
                 <br/>
                 <div className="row">
                     <div className="col-md-6">
-                        <div className="card text-white bg-warning">
+                        <div className="card text-white bg-success">
                             <h5 className="card-header">
                                 Recovered
                             </h5>
@@ -317,7 +317,7 @@ export default class FetchData extends Component{
                         <br/>
                     </div>
                     <div className="col-md-6">
-                        <div className="card text-white bg-info">
+                        <div className="card text-white bg-danger">
                             <h5 className="card-header">
                                 New Deaths
                             </h5>
