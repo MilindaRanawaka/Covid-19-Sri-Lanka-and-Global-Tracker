@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Logo from "./logo.png";
+import ParticlesBg from "particles-bg";
 import './App.css';
 
 export default class FetchData extends Component{
@@ -47,8 +47,12 @@ export default class FetchData extends Component{
         return (
 
             <div>
+                <div className="bubbles"> <ParticlesBg type="circle" bg={true} /></div>
+
                 {this.state.loading || !this.state.update_date_time ? (
-                    <div>Loading....</div>
+                    <div className="spinner-border" role="status">
+                        <span className="sr-only">Loading...</span>
+                    </div>
                 ) :(
 
             <div className="container-fluid">
