@@ -9,6 +9,7 @@ export default class FetchData extends Component{
         update_date_time: null,
         local_new_cases: null,
         local_total_cases: null,
+        local_active_cases: null,
         local_total_number_of_individuals_in_hospitals: null,
         local_deaths: null,
         local_new_deaths: null,
@@ -29,6 +30,7 @@ export default class FetchData extends Component{
             update_date_time: data.data.update_date_time,
             local_new_cases: data.data.local_new_cases,
             local_total_cases: data.data.local_total_cases,
+            local_active_cases: data.data.local_active_cases,
             local_total_number_of_individuals_in_hospitals: data.data.local_total_number_of_individuals_in_hospitals,
             local_deaths: data.data.local_deaths,
             local_new_deaths: data.data.local_new_deaths,
@@ -127,7 +129,7 @@ export default class FetchData extends Component{
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-md-4">
+                    <div className="col-md-3">
                         <div className="card text-white bg-primary">
                             <h5 className="card-header">
                                 New Cases
@@ -144,7 +146,7 @@ export default class FetchData extends Component{
                         <br/>
                     </div>
 
-                    <div className="col-md-4">
+                    <div className="col-md-3">
                         <div className="card text-white bg-warning">
                             <h5 className="card-header">
                                 Total Cases
@@ -160,7 +162,7 @@ export default class FetchData extends Component{
                         </div>
                         <br/>
                     </div>
-                    <div className="col-md-4">
+                    <div className="col-md-3">
                         <div className="card text-white bg-danger">
                             <h5 className="card-header">
                                 Deaths
@@ -168,6 +170,22 @@ export default class FetchData extends Component{
                             <div className="card-body">
                                 <p className="card-text">
                                     {this.state.local_deaths}
+                                </p>
+                            </div>
+                            <div className="card-footer">
+                                Last updated {this.state.update_date_time}
+                            </div>
+                        </div>
+                        <br/>
+                    </div>
+                    <div className="col-md-3">
+                        <div className="card text-white" style={{"background-color": "#7D10CC"}}>
+                            <h5 className="card-header">
+                                Active Cases
+                            </h5>
+                            <div className="card-body">
+                                <p className="card-text">
+                                    {this.state.local_active_cases}
                                 </p>
                             </div>
                             <div className="card-footer">
@@ -304,7 +322,7 @@ export default class FetchData extends Component{
                 <br/>
                 <br/>
                 <div className="row">
-                    <div className="col-md-6">
+                    <div className="col-md-4">
                         <div className="card text-white bg-success">
                             <h5 className="card-header">
                                 Recovered
@@ -320,7 +338,23 @@ export default class FetchData extends Component{
                         </div>
                         <br/>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-4">
+                        <div className="card text-white" style={{"background-color": "#7D10CC"}}>
+                            <h5 className="card-header">
+                                Active Cases
+                            </h5>
+                            <div className="card-body">
+                                <p className="card-text">
+                                    {this.state.global_total_cases - (this.state.global_recovered + this.state.global_deaths)}
+                                </p>
+                            </div>
+                            <div className="card-footer">
+                                Last updated {this.state.update_date_time}
+                            </div>
+                        </div>
+                        <br/>
+                    </div>
+                    <div className="col-md-4">
                         <div className="card text-white bg-danger">
                             <h5 className="card-header">
                                 New Deaths
