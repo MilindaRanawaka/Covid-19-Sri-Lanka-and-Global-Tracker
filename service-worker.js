@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Covid-19-Sri-Lanka-and-Global-Tracker/precache-manifest.625ee6116849cd51ae107b2326e3c533.js"
+  "/Covid-19-Sri-Lanka-and-Global-Tracker/precache-manifest.85039e521b05d3477a6ec511c13d2d9e.js"
 );
 
 self.addEventListener('message', (event) => {
