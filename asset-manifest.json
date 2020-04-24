@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Covid-19-Sri-Lanka-and-Global-Tracker/static/css/main.76088922.chunk.css",
-    "main.js": "/Covid-19-Sri-Lanka-and-Global-Tracker/static/js/main.725436f4.chunk.js",
-    "main.js.map": "/Covid-19-Sri-Lanka-and-Global-Tracker/static/js/main.725436f4.chunk.js.map",
+    "main.js": "/Covid-19-Sri-Lanka-and-Global-Tracker/static/js/main.b5eb3263.chunk.js",
+    "main.js.map": "/Covid-19-Sri-Lanka-and-Global-Tracker/static/js/main.b5eb3263.chunk.js.map",
     "runtime-main.js": "/Covid-19-Sri-Lanka-and-Global-Tracker/static/js/runtime-main.662c87a8.js",
     "runtime-main.js.map": "/Covid-19-Sri-Lanka-and-Global-Tracker/static/js/runtime-main.662c87a8.js.map",
     "static/js/2.43d0f5a1.chunk.js": "/Covid-19-Sri-Lanka-and-Global-Tracker/static/js/2.43d0f5a1.chunk.js",
     "static/js/2.43d0f5a1.chunk.js.map": "/Covid-19-Sri-Lanka-and-Global-Tracker/static/js/2.43d0f5a1.chunk.js.map",
     "index.html": "/Covid-19-Sri-Lanka-and-Global-Tracker/index.html",
-    "precache-manifest.85039e521b05d3477a6ec511c13d2d9e.js": "/Covid-19-Sri-Lanka-and-Global-Tracker/precache-manifest.85039e521b05d3477a6ec511c13d2d9e.js",
+    "precache-manifest.3975c78218c9bb27d63c8f5acf481c45.js": "/Covid-19-Sri-Lanka-and-Global-Tracker/precache-manifest.3975c78218c9bb27d63c8f5acf481c45.js",
     "service-worker.js": "/Covid-19-Sri-Lanka-and-Global-Tracker/service-worker.js",
     "static/css/main.76088922.chunk.css.map": "/Covid-19-Sri-Lanka-and-Global-Tracker/static/css/main.76088922.chunk.css.map",
     "static/js/2.43d0f5a1.chunk.js.LICENSE.txt": "/Covid-19-Sri-Lanka-and-Global-Tracker/static/js/2.43d0f5a1.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.662c87a8.js",
     "static/js/2.43d0f5a1.chunk.js",
     "static/css/main.76088922.chunk.css",
-    "static/js/main.725436f4.chunk.js"
+    "static/js/main.b5eb3263.chunk.js"
   ]
 }
