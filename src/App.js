@@ -62,10 +62,12 @@ export default class FetchData extends Component{
                     <div className="col-md-12">
                         <nav className="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark fixed-top">
 
+                            {/*
                             <button className="navbar-toggler" type="button" data-toggle="collapse"
                                     data-target="#bs-example-navbar-collapse-1">
                                 <span className="navbar-toggler-icon"></span>
                             </button>
+                            */}
                             <a className="navbar-brand" href="https://milindaranawaka.github.io/Covid-19-Sri-Lanka-and-Global-Tracker/">Covid-19 Sri Lanka and Global Tracker</a>
 
                             {/*<div classname="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -381,10 +383,12 @@ export default class FetchData extends Component{
                     <div className="col-md-12">
                         <nav className="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark fixed-bottom">
 
+                            {/*
                             <button className="navbar-toggler" type="button" data-toggle="collapse"
                                     data-target="#bs-example-navbar-collapse-1">
                                 <span className="navbar-toggler-icon"></span>
                             </button>
+                            */}
                             <p className="navbar-brand" style={{"text-align": "center;"}}> Made with ❤️ by <a className="navbar-brand" href="https://www.linkedin.com/in/milinda-ranawaka-5303a5185/">Milinda Ranawaka </a> | Powered By HEALTH PROMOTION BUREAU: <a className="navbar-brand" href="https://hpb.health.gov.lk/en/api-documentation">https://hpb.health.gov.lk/en/api-documentation</a> </p>
 
                         </nav>
